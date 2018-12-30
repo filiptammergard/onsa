@@ -167,7 +167,7 @@ h3 {
   h2.sm-heading,
   h3.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 0;
+    padding: 0.2rem;
     background: rgba(56, 56, 56, 0.5); }
 
 main#home .lg-heading {
