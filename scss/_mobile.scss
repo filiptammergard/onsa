@@ -4,6 +4,12 @@
 
 // Deskops & laptops
 @include mediaLg {
+	.about-info {
+		.bio-image {
+			width: 180px;
+			height: 180px;
+		}
+	}
 }
 
 // Tablets & small laptops
@@ -43,9 +49,11 @@
 	.about-info {
 		display: grid;
 		grid-template-areas:
-			"bio-image"
+			"bio-image1"
 			"job1"
+			"bio-image2"
 			"job2"
+			"bio-image3"
 			"job3";
 		grid-template-columns: 1fr;
 	}
