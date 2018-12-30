@@ -39,6 +39,16 @@
 		height: 50vh;
 		transform: translate3d(-100%, 0, 0);
 	}
+
+	.about-info {
+		display: grid;
+		grid-template-areas:
+			"bio-image"
+			"job1"
+			"job2"
+			"job3";
+		grid-template-columns: 1fr;
+	}
 }
 
 // Smartphones
