@@ -12,8 +12,8 @@ body {
 	color: set-text-color($primary-color);
 	height: 100%;
 	margin: 0;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	line-height: 1.5;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 // Headings
@@ -25,34 +25,44 @@ h3 {
 
 	&.lg-heading {
 		font-size: 6rem;
+		font-family: "Times New Roman", Times, serif;
+
+		.text-secondary {
+			color: $secondary-color;
+		}
 	}
 	&.sm-heading {
-		margin-bottom: 2rem;
+		margin-bottom: 1rem;
 		padding: 0.2rem;
-		background: rgba(lighten($primary-color, 2), 0.5);
 	}
 }
 main#home {
-	.lg-heading {
-		color: $color-green;
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+	p.color-link > a {
+		color: $secondary-color;
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	header {
+		position: fixed;
+		z-index: 2;
+		width: 100%;
+	}
+
+	.text-secondary {
+		color: $secondary-color;
+	}
+
+	.text-thrirdly {
+		color: $thirdly-color;
 	}
 }
-
-a {
-	color: #fff;
-	text-decoration: none;
-}
-
-header {
-	position: fixed;
-	z-index: 2;
-	width: 100%;
-}
-
-.text-secondary {
-	color: $secondary-color;
-}
-
 main {
 	padding: 4rem;
 	min-height: calc(100vh - 40px);
@@ -116,6 +126,10 @@ main {
 		padding: 0.5rem;
 		border-bottom: $secondary-color 5px solid;
 	}
+	h3 {
+		font-family: "Times New Roman", Times, serif;
+		font-size: 1.5rem;
+	}
 }
 
 // Contact page
@@ -153,5 +167,4 @@ main {
 	color: set-text-color($primary-color);
 	height: 40px;
 }
-
 @import "mobile";
