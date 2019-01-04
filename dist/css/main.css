@@ -207,7 +207,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #afd08f;
+        color: #afd08f !important;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
