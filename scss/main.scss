@@ -176,5 +176,10 @@ main {
 	background: darken($primary-color, 10);
 	color: set-text-color($primary-color);
 	height: 40px;
+
+	a {
+		color: white;
+		text-decoration: none;
+	}
 }
 @import "mobile";
