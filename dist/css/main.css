@@ -269,7 +269,8 @@ main {
   .about-info .job {
     background: #404040;
     padding: 0.5rem;
-    border-bottom: #afd08f 5px solid; }
+    border-bottom: #afd08f 5px solid;
+    border-radius: 4px; }
   .about-info h3 {
     font-family: "Times New Roman", Times, serif;
     font-size: 1.5rem; }
@@ -282,6 +283,7 @@ main {
   .boxes .box {
     font-size: 1rem;
     border: 3px #afd08f solid;
+    border-radius: 15px;
     padding: 1.5rem 2.5rem;
     margin: 1rem;
     transition: all 0.5s ease-out; }
@@ -305,10 +307,10 @@ main {
     width: 500px;
     height: 500px; }
   .about-info .bio-image {
-    width: 450px;
-    height: 450px; } }
+    width: 350px;
+    height: 350px; } }
 
-@media screen and (min-width: 769px) and (max-width: 1170px) {
+@media screen and (min-width: 769px) {
   .about-info .bio-image {
     width: 180px;
     height: 180px; } }

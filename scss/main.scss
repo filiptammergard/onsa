@@ -133,6 +133,7 @@ main {
 		background: lighten($primary-color, 5);
 		padding: 0.5rem;
 		border-bottom: $secondary-color 5px solid;
+		border-radius: 4px;
 	}
 	h3 {
 		font-family: "Times New Roman", Times, serif;
@@ -150,6 +151,7 @@ main {
 	.box {
 		font-size: 1rem;
 		border: 3px $secondary-color solid;
+		border-radius: 15px;
 		padding: 1.5rem 2.5rem;
 		margin: 1rem;
 		@include easeOut;
