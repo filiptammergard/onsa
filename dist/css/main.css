@@ -302,15 +302,23 @@ main {
   color: #fff;
   height: 40px; }
 
-@media screen and (min-width: 1171px) {
+@media screen and (min-width: 1571px) {
   .menu-branding .portrait {
-    width: 500px;
-    height: 500px; }
+    width: 550px;
+    height: 550px; }
   .about-info .bio-image {
-    width: 350px;
-    height: 350px; } }
+    width: 400px;
+    height: 400px; } }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1171px) and (max-width: 1570px) {
+  .menu-branding .portrait {
+    width: 400px;
+    height: 400px; }
+  .about-info .bio-image {
+    width: 300px;
+    height: 300px; } }
+
+@media screen and (min-width: 769px) and (max-width: 1170px) {
   .about-info .bio-image {
     width: 180px;
     height: 180px; } }

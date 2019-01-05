@@ -1,12 +1,24 @@
-// Widescreems
-@include mediaXl {
+// Very wide screems
+@include mediaXxl {
 	.menu-branding .portrait {
-		width: 500px;
-		height: 500px;
+		width: 550px;
+		height: 550px;
 	}
 	.about-info .bio-image {
-		width: 350px;
-		height: 350px;
+		width: 400px;
+		height: 400px;
+	}
+}
+
+// Wide screems
+@include mediaXl {
+	.menu-branding .portrait {
+		width: 400px;
+		height: 400px;
+	}
+	.about-info .bio-image {
+		width: 300px;
+		height: 300px;
 	}
 }
 
