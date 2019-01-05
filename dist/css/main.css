@@ -1,6 +1,5 @@
 .home-link {
   z-index: 3;
-  cursor: pointer;
   position: fixed;
   margin-left: auto;
   margin-right: auto;
@@ -19,7 +18,8 @@
     font-size: 1.5rem;
     font-family: "Times New Roman", Times, serif;
     text-decoration: none;
-    text-align: center; }
+    text-align: center;
+    padding: 1rem; }
 
 .menu-btn {
   position: fixed;
@@ -41,6 +41,9 @@
       opacity: 0; }
     .menu-btn.close .btn-line:nth-child(3) {
       transform: rotate(-45deg) translate(7px, -6px); }
+
+body#bg-img .home-link {
+  visibility: hidden; }
 
 .menu {
   position: fixed;
