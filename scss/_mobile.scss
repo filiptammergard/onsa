@@ -1,5 +1,13 @@
 // Widescreems
 @include mediaXl {
+	.menu-branding .portrait {
+		width: 500px;
+		height: 500px;
+	}
+	.about-info .bio-image {
+		width: 450px;
+		height: 450px;
+	}
 }
 
 // Deskops & laptops
@@ -66,5 +74,13 @@
 	}
 	h1.lg-heading {
 		font-size: 3rem;
+	}
+	.menu-branding .portrait {
+		width: 200px;
+		height: 200px;
+	}
+	.about-info .bio-image {
+		width: 200px;
+		height: 200px;
 	}
 }

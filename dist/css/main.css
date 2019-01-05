@@ -1,5 +1,28 @@
+.home-link {
+  z-index: 3;
+  cursor: pointer;
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  top: 0px;
+  padding: 25px 0;
+  text-align: center;
+  background: rgba(46, 46, 46, 0.4);
+  transform: translate3d(0, 0, 0);
+  transition: all 0.5s ease-out; }
+  .home-link.close {
+    transform: translate3d(-100%, 0, 0); }
+  .home-link a {
+    font-size: 1.5rem;
+    font-family: "Times New Roman", Times, serif;
+    text-decoration: none;
+    text-align: center; }
+
 .menu-btn {
-  position: absolute;
+  position: fixed;
   z-index: 3;
   right: 35px;
   top: 35px;
@@ -9,8 +32,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
-    transition: all 0.5s ease-out; }
+    background: #fff; }
   .menu-btn.close {
     transform: rotate(180deg); }
     .menu-btn.close .btn-line:nth-child(1) {
@@ -73,8 +95,7 @@
   display: block;
   position: relative;
   font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
   padding: 1rem 0;
   font-weight: 300;
   color: #fff;
@@ -90,8 +111,7 @@
   display: block;
   position: relative;
   font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
   padding: 1rem 0;
   font-weight: 300;
   color: #fff;
@@ -107,8 +127,7 @@
   display: block;
   position: relative;
   font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
   padding: 1rem 0;
   font-weight: 300;
   color: #fff;
@@ -124,8 +143,7 @@
   display: block;
   position: relative;
   font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
   padding: 1rem 0;
   font-weight: 300;
   color: #fff;
@@ -158,6 +176,12 @@ body {
       z-index: -1;
       background: rgba(51, 51, 51, 0.9); }
 
+.text-secondary {
+  color: #afd08f; }
+
+.text-thrirdly {
+  color: #97acd8; }
+
 h1,
 h2,
 h3 {
@@ -167,7 +191,8 @@ h3 {
   h2.lg-heading,
   h3.lg-heading {
     font-size: 6rem;
-    font-family: "Times New Roman", Times, serif; }
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 2rem; }
     h1.lg-heading .text-secondary,
     h2.lg-heading .text-secondary,
     h3.lg-heading .text-secondary {
@@ -215,6 +240,7 @@ main {
       margin-top: 20vh; }
 
 .about-info {
+  margin-top: 10vh;
   display: grid;
   grid-gap: 30px;
   grid-template-areas: "bio-image1 bio-image2 bio-image3" "job1 job2 job3";
@@ -271,6 +297,14 @@ main {
   color: #fff;
   height: 40px; }
 
+@media screen and (min-width: 1171px) {
+  .menu-branding .portrait {
+    width: 500px;
+    height: 500px; }
+  .about-info .bio-image {
+    width: 450px;
+    height: 450px; } }
+
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .about-info .bio-image {
     width: 180px;
@@ -307,4 +341,10 @@ main {
   main#home h1 {
     margin-top: 10vh; }
   h1.lg-heading {
-    font-size: 3rem; } }
+    font-size: 3rem; }
+  .menu-branding .portrait {
+    width: 200px;
+    height: 200px; }
+  .about-info .bio-image {
+    width: 200px;
+    height: 200px; } }
